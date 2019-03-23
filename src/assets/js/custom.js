@@ -1,4 +1,70 @@
 jQuery(document).ready(function() {
+
+    /*** Funtion Paginador ****/
+    $('#pagination-demo').twbsPagination({
+        totalPages: 2,
+        // the current page that show on start
+        startPage: 1,
+        
+        // maximum visible pages
+        visiblePages: 2,
+        
+        initiateStartPageClick: true,
+        
+        // template for pagination links
+        href: false,
+        
+        // variable name in href template for page number
+        hrefVariable: '{{number}}',
+        
+        // Text labels
+        first: 'First',
+        prev: 'Previous',
+        next: 'Next',
+        last: 'Last',
+        
+        // carousel-style pagination
+        //loop: false,
+        
+        // callback function
+        onPageClick: function (event, page) {
+            $('.page-active').removeClass('page-active');
+          $('#page'+page).addClass('page-active');
+        },
+        
+        // pagination Classes
+        paginationClass: 'pagination',
+        nextClass: 'next',
+        prevClass: 'prev',
+        lastClass: 'last',
+        firstClass: 'first',
+        pageClass: 'page',
+        activeClass: 'active',
+        disabledClass: 'disabled'
+        
+    });
+
+    /*** ** Funtion view Gallery*****/
+    $(document).ready(function(){
+        $(".filter-button").click(function(){
+            alert('eeee');
+            var value = $(this).attr('data-filter');            
+            if(value == "all")
+            {
+                $('.filter').show('1000');
+            }
+            else
+            {
+                $(".filter").not('.'+value).hide('3000');
+                $('.filter').filter('.'+value).show('3000');
+                
+            }
+        });
+        if ($(".filter-button").removeClass("active")) {
+            $(this).removeClass("active");
+        }
+        $(this).addClass("active");    
+    });
   
 
    $('#carouselHacked').carousel();

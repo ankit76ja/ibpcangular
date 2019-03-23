@@ -15,21 +15,6 @@
 	margin-bottom: 30px;
 }
 
-img {
-	width: 100%;
-}
-
-/* CSS to make images responsive -end */
-
-footer {
-	/* position: fixed; */
-	bottom: 0px;
-	background-color: gray;
-	width: 100%;
-	z-index: 2;
-	color: #DAA520;
-	/* color: white; */
-}
 
 .theme-gold, .navbar-default .navbar-nav>li>ul {
 	font-size: 18px;
@@ -51,10 +36,17 @@ footer {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'BenchNine', sans-serif;
+	font-family: 'BenchNine', sans-serif !important;
+
+    letter-spacing: 0;
+    text-transform: none;
+    /* background-image: url(../images/back3.jpg); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    color: #0f0e0e;
 }
 
-li {
+/*li {
 	list-style: none;
 }
 
@@ -65,7 +57,7 @@ a:hover, a:visited, a {
 h1, h2 {
 	text-transform: uppercase;
 	font-weight: bold;
-}
+}*/
 
 /*header area*/
 
@@ -114,10 +106,10 @@ h1, h2 {
 	color: #fff;
 }
 
-ul.nav {
+/*ul.nav {
 	margin: 0;
 	padding: 0;
-}
+}*/
 
 .navbar-default .navbar-nav>li>a {
 	font-size: 18px;
@@ -140,10 +132,10 @@ ul.nav {
 	background-color: #000;
 }
 
-li a.active {
-	color: #FFD700 !important;
+/*li a.active {
+	color: #FFD700;
 }
-
+*/
 .navbar-default .navbar-toggle {
 	border-color: #fff;
 	margin-top: 4px;
@@ -670,15 +662,7 @@ li a.active {
 	padding: 25px 0;
 }
 
-.footer a i.fa {
-	font-size: 24px;
-	color: #b1b1b1;
-	padding: 22px 10px;
-}
 
-.footer a i.fa:hover {
-	color: #42b3e5;
-}
 
 .carousel-inner {
 	position: relative;
@@ -756,9 +740,6 @@ responsive area
 		width: 215px;
 		height: 55px;
 		font-size: 26px;
-	}
-	h2 {
-		font-size: 50px !important;
 	}
 	h4 {
 		font-size: 22px !important;

@@ -15,7 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
+//import { FooterComponent } from './components/footer/footer.component';
 import { FatFooterComponent } from './components/fat-footer/fat-footer.component';
 
 
@@ -32,7 +32,7 @@ import { FatFooterComponent } from './components/fat-footer/fat-footer.component
     ContactComponent,
     PageNotFoundComponent,
     HeaderComponent,
-    FooterComponent,
+    //FooterComponent,
     FatFooterComponent
   ],
   imports: [
